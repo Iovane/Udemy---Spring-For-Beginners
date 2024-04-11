@@ -1,0 +1,16 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, beans
+  info:
+    env:
+      enabled: false
+
+
+
+info:
+  app:
+    name: "Magaria shechema"
+    description: "saswaulebs vshvebit aq chven"
+    version: 1.0.0

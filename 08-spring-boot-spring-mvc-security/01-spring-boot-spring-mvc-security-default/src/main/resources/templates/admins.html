@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Admins Home Page</title>
+</head>
+<body>
+    <h2>Admins Home Page</h2>
+    <hr>
+
+    <!-- display username and role -->
+    <p>
+        User: <span sec:authentication="principal.username"></span>
+        <br><br>
+        Role(s): <span sec:authentication="principal.authorities"></span>
+    </p>
+    <hr>
+
+    <p>
+        Is John ready to be a manager???
+        <br><br>
+        Nuhuuuuuh, let's give him some more time to work on his insecurities😪
+    </p>
+    <hr>
+    <a th:href="@{/}"> Back to Home Page</a>
+</body>
+</html>
